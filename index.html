@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emission Compensation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Details</h1>
+        <p><strong>Account Number:</strong> 0x73BCba2dfFf12928C6dd06BdcBcD851da47742a9</p>
+        <p><strong>Property Name:</strong> Tulihal Airport</p>
+        <p><strong>NFT Hash:</strong> 0x901a68bf4ed391e6a8e39b2eed53b72b7db519208da9c784fdaacccd36bcdfde (suhbscan.io)</p>
+        <p><strong>View:</strong> <a href="https://www.latlong.net/c/?lat=24.751043&long=93.891134" target="_blank">View on Map</a></p>
+        <p><strong>Coordinates</strong><ul>
+            <li>Vertex-1: lat'24.443157 long'93.500820</li>
+            <li>Vertex-2: lat'24.754471 long'93.895662</li>
+            <li>Vertex-3: lat'24.758796 long'93.898923</li>
+            <li>Vertex-4: lat'24.759732 long'93.889697</li>
+        </ul></p>
+        <h1>Carbon Emission Compensation Calculator</h1>
+        <div>
+            <label for="weight">Plane Weight (kg):</label>
+            <input type="number" id="weight">
+        </div>
+        <div>
+            <label for="area">Land Area (sq km):</label>
+            <input type="number" id="area">
+        </div>
+        <button id="calculateBtn">Calculate</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Case</th>
+                    <th>Plane Weight (kg)</th>
+                    <th>Land Area (sq km)</th>
+                    <th>Compensation</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTableBody">
+                <!-- Results will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
