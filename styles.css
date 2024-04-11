@@ -2,8 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color:  #ff8800;
 }
+
 
 .container {
     max-width: 800px;
@@ -11,7 +12,13 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 9px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Move container up by 5px on hover */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Add a slight shadow on hover */
 }
 
 h1 {
